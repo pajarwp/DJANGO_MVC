@@ -1,0 +1,55 @@
+html {
+    font-size: 16px;
+}
+
+.ata-header {
+    max-width: 700px;
+    color : white;
+}
+  
+.color { background-color: #00bfff
+}
+
+.margin {
+    margin-top: 50px;
+}
+
+.foot {
+    background-color: black;
+    color: white;
+}
+
+.style {
+    font-size: 30px;
+}
+
+.gambar {
+    height: 200px;
+}
+
+.mentor{
+    color: grey;
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog{
+    max-width: 600px;
+}
+
+.imgblog{
+    width: 600px;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 300px;
+}
+
+li {
+    margin-top: 10px;
+}
+

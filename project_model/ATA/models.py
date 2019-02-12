@@ -36,7 +36,7 @@ class MataPelajaran(models.Model) :
 class Mentor(models.Model) :
     nama_lengkap = models.CharField (max_length=255)
     nomor_telepon = models.IntegerField()
-    mata_pelajaran = models.ForeignKey (MataPelajaran, on_delete=models.CASCADE)
+    mata_pelajaran = models.TextField(max_length=255)
 
     def __str__(self):
         return self.nama_lengkap
