@@ -6,7 +6,7 @@
     {% for data in blog %}
     <div class="blog margin container">
         <div class="row px-3 mx-auto">
-            <img src="{{ data.gambar }}" class="center imgblog"/>
+            <img src="{{ data.gambar.url}}" class="center imgblog"/>
         </div>
         <div class="row px-3 mx-auto">
             <span class="center">{{ data.created_at }}</span>

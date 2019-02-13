@@ -11,7 +11,7 @@ from django.db import models
 
 class Mentee(models.Model) :
     nama_lengkap = models.CharField (max_length=255)
-    gambar = models.ImageField ()
+    gambar = models.ImageField (upload_to='images')
     status = models.TextField (max_length=255)
 
     def __str__(self):

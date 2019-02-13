@@ -9,9 +9,11 @@ from django.db import models
 
 # Create your models here.
 class Blog(models.Model) :
-    gambar = models.ImageField (upload_to)
+    gambar = models.ImageField (upload_to="images")
     judul = models.CharField (max_length=255)
     isi = models.TextField(max_length=255)
     created_at = models.DateTimeField(default=timezone.now)
+    
     def __str__(self):
         return self.judul
+    
