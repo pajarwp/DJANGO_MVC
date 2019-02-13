@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_list_or_404
 from .models import Blog
 from .forms import PostForm
 # Create your views here.
@@ -12,7 +12,11 @@ def new_blog(request) :
         form = PostForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
-            return redirect('new_blog')
+            return redirect('blog')
     else:
         form = PostForm()
     return render(request, 'blog/new_blog.html', {'form': form})
+
+def post_detail(request, post_id):
+    post_num = get_list_or_404(Blog, id=post_id)
+    return render(request, 'blog/blog_num.html', {'blog': post_num})

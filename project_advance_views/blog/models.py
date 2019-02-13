@@ -11,7 +11,7 @@ from django.db import models
 class Blog(models.Model) :
     gambar = models.ImageField (upload_to="images")
     judul = models.CharField (max_length=255)
-    isi = models.TextField(max_length=255)
+    isi = models.TextField()
     created_at = models.DateTimeField(default=timezone.now)
     
     def __str__(self):

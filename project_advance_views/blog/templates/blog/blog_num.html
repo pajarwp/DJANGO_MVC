@@ -16,10 +16,10 @@
             <h2 class="center">{{ data.judul }}</h2>
         </div>
         <div class="row px-3 mx-auto">
-            <p class="center">{{ data.isi|truncatewords:50 }}</p>
+            <p class="center">{{ data.isi }}</p>
         </div>
         <div class="row px-3 mx-auto">
-            <a href="{% url 'post_detail' post_id=data.id %}">Baca Selengkapnya</a>
+            <a href="{% url 'blog' %}">Kembali ke Blog</a>
         </div>
     </div>
     {% endfor %}
